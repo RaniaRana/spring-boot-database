@@ -68,4 +68,9 @@ public class ImageMetadataController {
 	public ImageMetadata getImageMetadataById(@PathVariable String id) {
 		return imageMetadataService.findById(id).orElse(null);
 	}
+
+    @GetMapping("/hello")
+    public String sendGreetings() {
+        return "Hello, World!";
+    }
 }
