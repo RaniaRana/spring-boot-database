@@ -61,7 +61,8 @@ public class ImageMetadataController {
 	
 	@GetMapping("/")
 	public List<ImageMetadata> getAllImageMetadata() {
-		return imageMetadataService.findAll();
+        return imageMetadataService.findAll();
+
 	}
 	
 	@GetMapping("/{id}")
@@ -73,4 +74,5 @@ public class ImageMetadataController {
     public String sendGreetings() {
         return "Hello, World!";
     }
+
 }
